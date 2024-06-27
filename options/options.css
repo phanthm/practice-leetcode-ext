@@ -1,0 +1,64 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.problem {
+    display: flex;
+    gap: 2.5rem;
+}
+
+.root {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #1f1f1f;
+    color: white;
+}
+
+.category {
+    margin: 2rem;
+}
+
+.category-name {
+    font-size: 1.5rem;
+}
+
+.problem {
+    margin: 0.5rem 0;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    border-radius: 2rem;
+    background-color: rgb(61, 61, 61);
+}
+
+.problem-name {
+    width: 30rem;
+    font-weight: 500;
+}
+
+.problem-name:hover {
+    cursor: pointer;
+}
+
+.difficulty {
+    text-align: center;
+    width: 4rem;
+}
+
+.easy {
+    color: green;
+}
+
+.medium {
+    color: yellow;
+}
+
+.hard {
+    color: red;
+}

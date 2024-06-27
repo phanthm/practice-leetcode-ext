@@ -1,0 +1,27 @@
+{
+    "manifest_version": 3,
+    "version": "1.0.0",
+    "name": "Practice Leetcode",
+    "description": "A browser extension to help you practice and track your progress on LeetCode problems.",
+    "action": {
+        "default_popup": "popup/popup.html"
+    },
+    "icons": {
+        "48": "icons/icon-48.png"
+    },
+    "background": {
+        "service_worker": "background.js",
+        "type": "module"
+    },
+    "permissions": [
+        "tabs",
+        "webRequest",
+        "storage",
+        "scripting",
+        "activeTab"
+    ],
+    "host_permissions": [
+        "*://leetcode.com/*"
+    ],
+    "options_page": "options/options.html"
+}

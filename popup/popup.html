@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Popup</title>
+    <link rel="stylesheet" href="popup.css">
+</head>
+
+<body>
+
+    <div class="root">
+
+        <div id="display" class="display hidden">
+            <div class="disp-comp">
+                <input id="solved" class="solved hidden" type="checkbox">
+                <div id="name-display" class="name-display"></div>
+            </div>
+            <div class="disp-comp">
+                <div id="counter-display" class="counter-display"></div>
+            </div>
+        </div>
+
+        <div class="generate">
+            <button id="generate-btn" class="bn3">Generate Problem</button>
+            <button id="filter-btn" class="filter-btn bn3">Filter</button>
+        </div>
+        <div id="filter-container" class="filter-container">
+            <div id="filter-options" class="filter-options"></div>
+        </div>
+
+        <div class="info">
+            <a id="problem-link" class="problem-link"></a>
+            <div id="error"></div>
+        </div>
+
+        <div class="options" id="options">Show All Problems</div>
+
+    </div>
+
+    <script src="popup.js"></script>
+</body>
+
+</html>

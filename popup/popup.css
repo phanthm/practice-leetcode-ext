@@ -1,0 +1,160 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body {
+    width: 500px;
+    height: 500px;
+}
+
+.filter-options {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.filter-option {
+    height: 38px;
+    width: calc((100vw - 45px) / 4);
+    border: 0.15em solid white;
+    border-radius: 0.75rem;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+label {
+    color: #ffffff;
+}
+
+.container {
+    display: inline-flex;
+    width: fit-content;
+    height: fit-content;
+    gap: 5px;
+}
+
+.row-two {
+    display: flex;
+    gap: 5px
+}
+
+.category-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 5px;
+}
+
+.filter-container {
+    margin: 10px;
+    padding: 5px;
+    background-color: rgb(61, 61, 61);
+    border-radius: 1rem;
+    z-index: 1;
+}
+
+.display {
+    display: flex;
+    width: 100%;
+    height: 100px;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    gap: 10px;
+}
+
+.disp-comp {
+    display: flex;
+    width: calc((100vw - 30px) / 2);
+    height: 100%;
+    border-radius: 1rem;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    background-color: rgb(61, 61, 61);
+    font-size: 1.5em;
+}
+
+.info {
+    margin: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.generate {
+    margin: 2rem 0 0 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.options {
+    position: absolute;
+    bottom: 0;
+    color: white;
+    text-decoration: underline;
+    font-size: 1.25em;
+    margin: 10px 0;
+}
+
+.options:hover {
+    cursor: pointer;
+}
+
+.root {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #1f1f1f;
+}
+
+input[type="checkbox"] {
+    margin: 0.25rem;
+}
+
+.row-one {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.bn3 {
+    display: inline-block;
+    padding: 0.5em 1.7em;
+    margin: 0 0.1em 0.1em 0;
+    border: 0.16em solid rgb(255, 255, 255);
+    border-radius: 2em;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    color: #ffffff;
+    text-shadow: 0 0.04em 0.04em rgba(255, 255, 255, 0.253);
+    text-align: center;
+    transition: all 0.2s;
+    background-color: rgb(61, 61, 61);
+}
+
+.bn3:hover {
+    color: black;
+    background-color: rgb(255, 255, 255);
+}
+
+.hidden {
+    display: none;
+}
+
+.problem-link {
+    color: #ffffff;
+    font-size: 1.5em;
+}
